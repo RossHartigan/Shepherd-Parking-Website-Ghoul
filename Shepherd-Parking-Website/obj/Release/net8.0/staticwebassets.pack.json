@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Shepherd-Parking-Website.bundle.scp.css"
     },
     {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/aboutUs.css",
+      "PackagePath": "staticwebassets/css/aboutUs.css"
+    },
+    {
       "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/login.css",
       "PackagePath": "staticwebassets/css/login.css"
     },
@@ -67,6 +71,10 @@
     {
       "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Sheep_Logo.png",
       "PackagePath": "staticwebassets/images/Sheep_Logo.png"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/background.png",
+      "PackagePath": "staticwebassets/images/background.png"
     },
     {
       "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/dashboard.png",

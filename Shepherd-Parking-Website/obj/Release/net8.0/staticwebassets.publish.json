@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PhypRIFgappYHyXhrF8iWIJSf1qVlw1sUYfirxNEFRY=",
+  "Hash": "xkSZLbgJfkk1pTvQbcnD3SrON/Ca1Ehy9EObwpqpVz0=",
   "Source": "Shepherd-Parking-Website",
   "BasePath": "_content/Shepherd-Parking-Website",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/obj/Release/net8.0/scopedcss/projectbundle/Shepherd-Parking-Website.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/aboutUs.css",
+      "SourceId": "Shepherd-Parking-Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/",
+      "BasePath": "_content/Shepherd-Parking-Website",
+      "RelativePath": "css/aboutUs.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/aboutUs.css"
     },
     {
       "Identity": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/login.css",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/background.png",
+      "SourceId": "Shepherd-Parking-Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/",
+      "BasePath": "_content/Shepherd-Parking-Website",
+      "RelativePath": "images/background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/background.png"
     },
     {
       "Identity": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/dashboard.png",
