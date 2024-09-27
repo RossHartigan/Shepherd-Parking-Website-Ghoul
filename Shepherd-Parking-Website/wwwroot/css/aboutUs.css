@@ -76,7 +76,7 @@ h1 {
     padding: 50px;
 }
 
-/* Page section container with two columns: image on the left, description on the right */
+/* Page section container */
 .page-section {
     display: grid;
     grid-template-columns: 1fr 2fr; 
