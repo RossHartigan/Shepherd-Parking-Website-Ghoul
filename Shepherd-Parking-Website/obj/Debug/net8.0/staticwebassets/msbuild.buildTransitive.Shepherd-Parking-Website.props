@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Shepherd-Parking-Website.props" />
+</Project>

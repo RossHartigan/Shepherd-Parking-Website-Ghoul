@@ -1,0 +1,7 @@
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/Shepherd-Parking-Website
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/appsettings.json
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/Shepherd-Parking-Website.dll
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/Shepherd-Parking-Website.deps.json
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/Shepherd-Parking-Website.runtimeconfig.json
+/Users/rosshartigan/Folders/Shepherd-Parking-Website/Shepherd-Parking-Website/Shepherd-Parking-Website/bin/Release/net8.0/publish/Shepherd-Parking-Website.pdb

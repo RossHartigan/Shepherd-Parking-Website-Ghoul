@@ -1,0 +1,159 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Car Count Display";
+}
+
+<!-- Main container for centering the content -->
+<div class="container">
+    <h1>Car Count Dashboard</h1>
+    <div class="stats">
+        <h2>Current Car Count: <span id="carCountDisplay">Loading...</span></h2>
+        <h2>Max Car Count: <span id="maxCarCountDisplay">Loading...</span></h2>
+        <h3>Projected Morning Cars: <span id="projectedMorningCarsDisplay">Loading...</span></h3>
+        <h3>Projected Afternoon Cars: <span id="projectedAfternoonCarsDisplay">Loading...</span></h3>
+    </div>
+
+    <!-- Progress bar section -->
+    <div class="progress-section">
+        <label for="carProgress">Car Count Progress:</label>
+        <progress id="carProgress" value="0" max="100"></progress>
+        <span id="progressPercentage">0%</span>
+    </div>
+</div>
+
+<!-- Styles to improve the page appearance -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .stats h2,
+    .stats h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .progress-section {
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    progress {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: #f3f3f3;
+        border-radius: 5px;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: #4CAF50;
+        border-radius: 5px;
+    }
+
+    span#progressPercentage {
+        display: block;
+        font-size: 1.2em;
+        color: #333;
+        margin-top: 5px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #777;
+    }
+
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+</style>
+
+@section Scripts {
+    <script type="module">
+        // Import necessary Firebase modules for version 9 and above
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCt6Qx4jIHFfuF-pICv9UELAsp7PGLEBgc",
+            authDomain: "shepherd-9a70b.firebaseapp.com",
+            databaseURL: "https://shepherd-9a70b-default-rtdb.firebaseio.com",
+            projectId: "shepherd-9a70b",
+            storageBucket: "shepherd-9a70b.appspot.com",
+            messagingSenderId: "752353533147",
+            appId: "1:752353533147:web:94b11bb6cbcb6c239280fe",
+            measurementId: "G-M0NX64WE41"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        // Function to fetch data from the Realtime Database
+        function fetchData() {
+            const dbRef = ref(database);
+            onValue(dbRef, (snapshot) => {
+                const data = snapshot.val();
+
+                // Update the basic stats on the page
+                const carCount = data.carCount || 0;
+                const maxCarCount = data.maxCarCount || 100;
+
+                document.getElementById('carCountDisplay').textContent = carCount;
+                document.getElementById('maxCarCountDisplay').textContent = maxCarCount;
+                document.getElementById('projectedMorningCarsDisplay').textContent = data.projectedMorningCars || 'No cars booked';
+                document.getElementById('projectedAfternoonCarsDisplay').textContent = data.projectedAfternoonCars || 'No cars booked';
+
+                // Update the progress bar
+                const progress = document.getElementById('carProgress');
+                const progressPercentage = document.getElementById('progressPercentage');
+
+                progress.max = maxCarCount;
+                progress.value = carCount;
+
+                // Calculate and display percentage
+                const percentage = ((carCount / maxCarCount) * 100).toFixed(2);
+                progressPercentage.textContent = `${percentage}%`;
+            });
+        }
+
+        // Fetch data when the page loads
+        window.onload = function () {
+            fetchData();
+        };
+    </script>
+}

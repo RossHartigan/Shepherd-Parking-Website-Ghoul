@@ -1,0 +1,105 @@
+@page
+@model Shepherd_Parking_Website.Pages.VerificationPage
+@{
+    ViewData["Title"] = "Enter Verification Code";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Verification Code</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #C0EDE9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .verification-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .code-input-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .code-input {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: border 0.2s ease-in-out;
+        }
+
+        .code-input:last-child {
+            margin-right: 0;
+        }
+
+        .code-input:focus {
+            border-color: #5bc0de;
+            outline: none;
+        }
+
+        .verify-btn {
+            background-color: #5bc0de;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .verify-btn:hover {
+            background-color: #46b8da;
+        }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="verification-container">
+        <h2>Enter Verification Code</h2>
+        <div class="code-input-container">
+            <input type="text" id="verificationCode" name="verificationCode" class="code-input" maxlength="6" required />
+        </div>
+        <button type="submit" class="verify-btn">Verify</button>
+        <div id="error-message" style="display: none; color: red;"></div>
+    </div>
+
+    <script type="module" src="~/js/verification.js"></script>
+</body>
+</html>

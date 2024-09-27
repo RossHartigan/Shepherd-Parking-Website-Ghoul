@@ -1,0 +1,299 @@
+@page
+@model Pages_Dashboard
+@{
+    ViewData["Title"] = "Parking Dashboard";
+}
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>@ViewData["Title"] - Shepherd Parking</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChtx0mJPwMAkzqefdjxOD1el1wxbHoC3Y"></script>
+</head>
+ 
+<!-- Sidebar hello there-->
+<div class="sidebar" id="sidebar">
+    <div class="logo-container">
+        <img src="/images/sheep.png" alt="Shepherd Parking Logo" class="logo">
+        <i class="app-name">Shepherd Parking</i>
+    </div>
+ 
+    <nav class="nav">
+        <a href="/Dashboard" class="nav-link">
+            <i class="fas fa-tachometer-alt"></i>
+            <p id="dashboard">Dashboard</p>
+        </a>
+        <a href="/AboutUs" class="nav-link">
+            <i class="fas fa-info-circle"></i>
+            <p id="aboutus">About Us</p>
+        </a>
+        <a href="/Login" class="nav-link">
+            <i class="fas fa-sign-out-alt"></i>
+            <p id="logout">Logout</p>
+        </a>
+    </nav>
+</div>
+ 
+<div class="dashboard">
+    <h1>Dashboard</h1>
+ 
+    <div class="dashboard-content">
+        <!-- Graph Placeholder -->
+        <div class="graph-container">
+            <h2>Graph Placeholder</h2>
+            <br />
+            <br />
+            <br />
+        </div>
+ 
+        <!-- Map -->
+        <div class="map-container">
+            <div id="map" style="width: 100%; height: 100%;"></div>
+        </div>
+ 
+        <!-- Car Count Placeholder -->
+        <div class="car-count-container">
+            <div class="parking-capacity-container">
+                <h2 id="capacity-text">Capacity</h2>
+                <span id="capacityPercentage">Loading ...</span>
+                <canvas id="parkingCapacityChart" width="200" height="200"></canvas>
+ 
+                <div class="car-count-details">
+                    <div class="morning-count">
+                        <h3>Projected Morning Cars</h3>
+                        <span id="morningCars"><p id="morningCarText">Loading ...</p></span>
+                    </div>
+                    <div class="afternoon-count">
+                        <h3>Projected Afternoon Cars</h3>
+                        <span id="afternoonCars"><p id="afternoonCarText">Loading ...</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+@section Scripts {
+    <script type="module">
+        // Import firebase-init to use the initialized Firebase instance
+        import { db, realTimeDb } from '/js/firebase-init.js';
+        import { ref, onValue } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+        import { collection, getDocs, query, where, Timestamp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+ 
+        let map;
+        let markers = [];
+ 
+        function initMap() {
+            const varsityCollege = { lat: -26.0932626, lng: 28.0480246 };
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: varsityCollege,
+                zoom: 12,
+            });
+ 
+            new google.maps.Marker({
+                position: varsityCollege,
+                map: map,
+                title: "Varsity College Sandton"
+            });
+ 
+            fetchTrafficFeedback();
+        }
+ 
+        async function fetchTrafficFeedback() {
+            const twentyFourHoursAgo = new Date();
+            twentyFourHoursAgo.setHours(twentyFourHoursAgo.getHours() - 24);
+ 
+            const q = query(
+                collection(db, "traffic_feedback")
+               
+            );
+ 
+            try {
+                const querySnapshot = await getDocs(q);
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    addMarker(data);
+                });
+            } catch (error) {
+                console.error("Error fetching traffic feedback: ", error);
+            }
+        }
+ 
+        function addMarker(feedback) {
+            const location = feedback.location;
+            let position;
+ 
+            if (location.startsWith("HARDCODED_LOCATION:")) {
+                const [lat, lng] = location.replace("HARDCODED_LOCATION:", "").split(",");
+                position = { lat: parseFloat(lat), lng: parseFloat(lng) };
+            } else if (location.includes(",")) {
+                const [lat, lng] = location.split(",");
+                position = { lat: parseFloat(lat), lng: parseFloat(lng) };
+            } else {
+                console.warn("Invalid location format:", location);
+                return;
+            }
+ 
+            const marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: `Feedback from ${feedback.stdNumber}`,
+                icon: getCategoryIcon(feedback.category)
+            });
+ 
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div>
+                        <h3>Feedback from ${feedback.stdNumber}</h3>
+                        <p>${feedback.message}</p>
+                        <p>Category: ${feedback.category}</p>
+                        <p>Time: ${new Date(feedback.timestamp).toLocaleString()}</p>
+                    </div>
+                `
+            });
+ 
+            marker.addListener("click", () => {
+                infoWindow.open(map, marker);
+            });
+ 
+            markers.push(marker);
+        }
+ 
+        function getCategoryIcon(category) {
+            const iconBase = 'http://maps.google.com/mapfiles/ms/icons/';
+            switch (category) {
+                case 'Accident':
+                    return iconBase + 'red-dot.png';
+                case 'HeavyTraffic':
+                    return iconBase + 'orange-dot.png';
+                case 'RoadConstruction':
+                    return iconBase + 'yellow-dot.png';
+                default:
+                    return iconBase + 'blue-dot.png';
+            }
+        }
+ 
+        function updateUI(data) {
+            const carCount = data.carCount || 0;
+            const maxCarCount = data.maxCarCount || 100;
+            const morningCars = data.projectedMorningCars || 0;
+            const afternoonCars = data.projectedAfternoonCars || 0;
+ 
+            // Calculate the percentage
+            let percentage = (carCount / maxCarCount) * 100;
+ 
+            // Ensure that percentage is exactly 100 when carCount equals maxCarCount
+            if (carCount >= maxCarCount) {
+                percentage = 100;
+            }
+ 
+            // Update the circular chart
+            updateParkingChart(percentage, morningCars, afternoonCars);
+            document.getElementById('capacityPercentage').textContent = `${Math.round(percentage)}%`;
+        }
+ 
+        function updateParkingChart(finalPercentage, finalMorningCars, finalAfternoonCars) {
+            const canvas = document.getElementById('parkingCapacityChart');
+            const ctx = canvas.getContext('2d');
+            const radius = canvas.width / 2;
+            const lineWidth = 20;
+            let currentPercentage = 0;
+            let currentMorningCount = 0;
+            let currentAfternoonCount = 0;
+ 
+            // Define the speed of the animation
+            const incrementPercentage = 0.69;
+            const incrementMorningCars = 0.15;
+            const incrementAfternoonCars = 0.15;
+            const animationDelay = 10;
+ 
+            // Animation loop function
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+ 
+                // Background circle (gray)
+                ctx.beginPath();
+                ctx.arc(radius, radius, radius - lineWidth / 2, 0, Math.PI * 2);
+                ctx.strokeStyle = '#D3D3D3';
+                ctx.lineWidth = lineWidth;
+                ctx.stroke();
+ 
+                // Determine circle color based on percentage
+                let circleColour;
+                switch (true) {
+                    case (currentPercentage >= 90):
+                        circleColour = "red";
+                        break;
+                    case (currentPercentage >= 75):
+                        circleColour = "orange";
+                        break;
+                    case (currentPercentage >= 50):
+                        circleColour = "yellow";
+                        break;
+                    default:
+                        circleColour = "#A8E2D0";
+                        break;
+                }
+ 
+                // Foreground circle (color based on percentage)
+                ctx.beginPath();
+                const endAngle = (Math.PI * 2 * (currentPercentage / 100)) - Math.PI / 2;
+                ctx.arc(radius, radius, radius - lineWidth / 2, -Math.PI / 2, endAngle);
+                ctx.lineCap = 'round';
+                ctx.strokeStyle = circleColour;
+                ctx.lineWidth = lineWidth;
+                ctx.stroke();
+ 
+                // Increment values - Animate
+                if (currentPercentage < finalPercentage) {
+                    currentPercentage += incrementPercentage;
+                } else {
+                    currentPercentage = finalPercentage;
+                }
+ 
+                if (currentMorningCount < finalMorningCars) {
+                    currentMorningCount += incrementMorningCars;
+                } else {
+                    currentMorningCount = finalMorningCars;
+                }
+ 
+                if (currentAfternoonCount < finalAfternoonCars) {
+                    currentAfternoonCount += incrementAfternoonCars;
+                } else {
+                    currentAfternoonCount = finalAfternoonCars;
+                }
+ 
+                // Continue the animation with a small delay between frames
+                if (currentPercentage < finalPercentage || currentMorningCount < finalMorningCars || currentAfternoonCount < finalAfternoonCars) {
+                    setTimeout(() => {
+                        requestAnimationFrame(animate);
+                    }, animationDelay);
+                }
+ 
+                // Update percentage text inside the circle
+                document.getElementById('capacityPercentage').textContent = `${Math.round(currentPercentage)}%`;
+                document.getElementById('morningCars').textContent = Math.round(currentMorningCount);
+                document.getElementById('afternoonCars').textContent = Math.round(currentAfternoonCount);
+            }
+ 
+            // Start the animation
+            requestAnimationFrame(animate);
+        }
+ 
+        // Fetch parking data from Firebase when the page loads
+        function fetchParkingData() {
+            const dbRef = ref(realTimeDb);
+            onValue(dbRef, (snapshot) => {
+                const data = snapshot.val();
+                updateUI(data);
+            });
+        }
+ 
+        // Fetch data on page load
+        window.onload = function () {
+            initMap();
+            fetchParkingData();
+        };
+    </script>
+}

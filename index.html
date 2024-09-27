@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Realtime Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Realtime Data from Firebase</h1>
+    <div id="data-container">
+        <p>Loading data...</p>
+    </div>
+
+    <!-- Add the Firebase initialization script here -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+      import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js";
+      
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCt6Qx4jIHFfuF-pICv9UELAsp7PGLEBgc",
+        authDomain: "shepherd-9a70b.firebaseapp.com",
+        databaseURL: "https://shepherd-9a70b-default-rtdb.firebaseio.com",
+        projectId: "shepherd-9a70b",
+        storageBucket: "shepherd-9a70b.appspot.com",
+        messagingSenderId: "752353533147",
+        appId: "1:752353533147:web:94b11bb6cbcb6c239280fe",
+        measurementId: "G-M0NX64WE41"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      // Initialize Realtime Database
+      const database = getDatabase(app);
+
+      // Reference your data and listen for real-time changes
+      const dataRef = ref(database, '/');  // Root path, adjust if necessary
+      onValue(dataRef, (snapshot) => {
+        const data = snapshot.val();
+        const dataContainer = document.getElementById('data-container');
+        dataContainer.innerHTML = ''; // Clear previous content
+
+        // Create HTML elements for each field
+        const carCountElement = document.createElement('p');
+        carCountElement.textContent = `Car Count: ${data.carCount || 'N/A'}`;
+
+        const maxCarCountElement = document.createElement('p');
+        maxCarCountElement.textContent = `Max Car Count: ${data.maxCarCount || 'N/A'}`;
+
+        const projectMorningCarsElement = document.createElement('p');
+        projectMorningCarsElement.textContent = `Projected Morning Cars: ${data.projectedMorningCars || 'N/A'}`;
+
+        const projectAfternoonCarsElement = document.createElement('p');
+        projectAfternoonCarsElement.textContent = `Projected Afternoon Cars: ${data.projectedAfternoonCars || 'N/A'}`;
+
+        const thresholdsElement = document.createElement('p');
+        thresholdsElement.textContent = `Thresholds: ${JSON.stringify(data.thresholds) || 'N/A'}`;
+
+        const timeslotsElement = document.createElement('p');
+        timeslotsElement.textContent = `Time Slots: ${JSON.stringify(data.timeSlots) || 'N/A'}`;
+
+        const usersElement = document.createElement('p');
+        usersElement.textContent = `Users: ${JSON.stringify(data.users) || 'N/A'}`;
+
+        // Append all elements to the data container
+        dataContainer.appendChild(carCountElement);
+        dataContainer.appendChild(maxCarCountElement);
+        dataContainer.appendChild(projectMorningCarsElement);
+        dataContainer.appendChild(projectAfternoonCarsElement);
+        dataContainer.appendChild(thresholdsElement);
+        dataContainer.appendChild(timeslotsElement);
+        dataContainer.appendChild(usersElement);
+      });
+    </script>
+</body>
+</html>
