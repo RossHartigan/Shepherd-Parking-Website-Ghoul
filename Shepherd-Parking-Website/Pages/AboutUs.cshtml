@@ -6,202 +6,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Meet The Team</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            text-align: center;
-            color: #008000;
-        }
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-            padding-left: 60px;
-        }
-        .team-member {
-            text-align: center;
-            position: relative;
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-        }
-        .team-member img {
-            width: 135px;
-            height: 135px;
-            border-radius: 50%;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .team-member-description {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            padding: 10px;
-            background-color: rgba(0, 128, 0, 0.8);
-            color: white;
-            text-align: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-            border-radius: 5px;
-        }
-        .team-member:hover img {
-            opacity: 0;
-        }
-        .team-member:hover .team-member-description {
-            opacity: 1;
-            visibility: visible;
-        }
-        .team-member-name {
-            margin-top: 10px;
-            color: #000;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .page-description {
-            margin-bottom: 20px;
-        }
-        img {
-            display: block;
-            margin: 0 auto; /* Centers the images */
-        }
-    </style>
 </head>
-<body>
-
-<h1>Meet The Team</h1>
-
-<div class="team-container">
-    <div class="team-member">
-        <img src="/images/Sam_Hyde-_The_Candyman_20240101033414_e000007_02.jpeg" alt="Aron">
-        <div class="team-member-name">Aron</div>
-        <div class="team-member-description">Lead Developer with expertise in front-end technologies.</div>
-    </div>
-    
-    <div class="team-member">
-        <img src="/images/SamGunHyde.jpg" alt="Brandon">
-        <div class="team-member-name">Brandon</div>
-        <div class="team-member-description">Back-end Developer specializing in databases and APIs.</div>
-    </div>
-
-    <div class="team-member">
-        <img src="/images/SamJackHyde.jpg" alt="Quintin">
-        <div class="team-member-name">Quintin</div>
-        <div class="team-member-description">UX/UI Designer focused on creating user-friendly interfaces.</div>
-    </div>
-    
-    <div class="team-member">
-        <img src="/images/SamRespectWomanHyde.jpg" alt="Ross">
-        <div class="team-member-name">Ross</div>
-        <div class="team-member-description">DevOps Engineer managing cloud infrastructure and CI/CD.</div>
+<body id="top">
+    <!-- Sidebar-->
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <img src="/images/sheep.png" alt="Shepherd Parking Logo" class="logo">
+            <i class="app-name">Shepherd Parking</i>
+        </div>
+        
+        <nav class="nav">
+            <a href="/Dashboard" class="nav-link">
+                <i class="fas fa-tachometer-alt"></i>
+                <p id="dashboard">Dashboard</p>
+            </a>
+            <a href="/AboutUs" class="nav-link">
+                <i class="fas fa-info-circle"></i>
+                <p id="aboutus">About Us</p>
+            </a>
+            <a href="/Login" class="nav-link">
+                <i class="fas fa-sign-out-alt"></i>
+                <p id="logout">Logout</p>
+            </a>
+        </nav>
     </div>
 
-    <div class="team-member">
-        <img src="/images/SamShyHyde.jpg" alt="Rylan">
-        <div class="team-member-name">Rylan</div>
-        <div class="team-member-description">Security Specialist ensuring safe and secure web applications.</div>
+    <h1>Meet The Team</h1>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="/images/Sam_Hyde-_The_Candyman_20240101033414_e000007_02.jpeg" alt="Aron">
+            <div class="team-member-name">Aron</div>
+            <div class="team-member-description">Lead Developer with expertise in front-end technologies.</div>
+        </div>
+        
+        <div class="team-member">
+            <img src="/images/SamGunHyde.jpg" alt="Brandon">
+            <div class="team-member-name">Brandon</div>
+            <div class="team-member-description">Back-end Developer specializing in databases and APIs.</div>
+        </div>
+
+        <div class="team-member">
+            <img src="/images/SamJackHyde.jpg" alt="Quintin">
+            <div class="team-member-name">Quintin</div>
+            <div class="team-member-description">UX/UI Designer focused on creating user-friendly interfaces.</div>
+        </div>
+        
+        <div class="team-member">
+            <img src="/images/SamRespectWomanHyde.jpg" alt="Ross">
+            <div class="team-member-name">Ross</div>
+            <div class="team-member-description">DevOps Engineer managing cloud infrastructure and CI/CD.</div>
+        </div>
+
+        <div class="team-member">
+            <img src="/images/SamShyHyde.jpg" alt="Rylan">
+            <div class="team-member-name">Rylan</div>
+            <div class="team-member-description">Security Specialist ensuring safe and secure web applications.</div>
+        </div>
+
+        <div class="team-member">
+            <img src="/images/SamTedHyde.jpg" alt="Shavir">
+            <div class="team-member-name">Shavir</div>
+            <div class="team-member-description">QA Engineer focusing on testing and quality assurance.</div>
+        </div>
     </div>
 
-    <div class="team-member">
-        <img src="/images/SamTedHyde.jpg" alt="Shavir">
-        <div class="team-member-name">Shavir</div>
-        <div class="team-member-description">QA Engineer focusing on testing and quality assurance.</div>
-    </div>
-</div>
+    <div class="about-us-container">
+        <h1>About Shepherd Parking</h1>
 
-<div class="container">
-    <h1>About Shepherd Parking</h1>
+        <div class="page-section">
+            <!-- Image column -->
+            <img src="/images/Screenshot_20240926_110424_Shepherd Parking.jpg" alt="A description of the image" width="300">
 
-    <div class="page-description">
-        <h2>Home Page</h2>
-        <img src="/images/Screenshot_20240926_110424_Shepherd Parking.jpg" alt="A description of the image" width="300">
-        <p>
-            <strong>Description:</strong> This page is the landing screen for users once they open the app. It provides key information such as the current parking availability (displayed as a percentage). Users can access various functions like checking in at a parking spot, reporting traffic feedback, notifying if they are running late, and viewing parking analytics.
-        </p>
-        <p><strong>Main Features:</strong></p>
-        <ul>
-            <li>Parking Availability: Displays how full the parking lot is.</li>
-            <li>Check In: Allows users to record their arrival at the parking area.</li>
-            <li>Traffic Feedback: Provides an option for users to report current traffic conditions.</li>
-            <li>Late: A feature that notifies the system if the user is running late.</li>
-            <li>Analytics: Shows parking usage statistics.</li>
-        </ul>
-    </div>
+            <!-- Description column -->
+            <div class="page-description">
+                <h2>Home Page</h2>
+                <p>
+                    <strong><p class="page-descripton-label">Description:</p></strong> This page is the landing screen for users once they open the app. It provides key information such as the current parking availability (displayed as a percentage).
+                </p>
+                <p class="page-descripton-label"><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Parking Availability: Displays how full the parking lot is.</li>
+                    <li>Check In: Allows users to record their arrival at the parking area.</li>
+                    <li>Traffic Feedback: Provides an option for users to report current traffic conditions.</li>
+                    <li>Late: A feature that notifies the system if the user is running late.</li>
+                    <li>Analytics: Shows parking usage statistics.</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="page-description">
-        <h2>Traffic Feedback Page</h2>
-        <img src="/images/Screenshot_20240926_110749_Shepherd Parking.jpg" alt="A description of the image" width="300">
-        <p>
-            <strong>Description:</strong> This page allows users to report real-time traffic feedback. Users can type in a message describing the situation (e.g., an accident) and choose a category (e.g., Heavy Traffic) from a dropdown menu. Once submitted, users can also view updates on the map based on the traffic feedback.
-        </p>
-        <p><strong>Main Features:</strong></p>
-        <ul>
-            <li>Message Input: Users can describe traffic situations.</li>
-            <li>Category Selection: Dropdown to choose a relevant traffic category.</li>
-            <li>Map Updates: View the latest map updates related to traffic incidents.</li>
-        </ul>
-    </div>
+        <div class="page-section">
+            <!-- Image column -->
+            <img src="/images/Screenshot_20240926_110749_Shepherd Parking.jpg" alt="A description of the image" width="300">
 
-    <div class="page-description">
-        <h2>Map Updates Page</h2>
-        <img src="/images/Screenshot_20240926_110833_Shepherd Parking.jpg" alt="A description of the image" width="300">
-        <p>
-            <strong>Description:</strong> This page provides a visual representation of traffic incidents and parking lot conditions over the last 24 hours. It shows the location of incidents with a legend to explain the types of events (accident, heavy traffic, road construction, etc.).
-        </p>
-        <p><strong>Main Features:</strong></p>
-        <ul>
-            <li>Map with Legend: Displays the map with markers for incidents.</li>
-            <li>Last 24 Hours: Shows updates in a 24-hour period for better decision-making.</li>
-        </ul>
-    </div>
+            <!-- Description column -->
+            <div class="page-description">
+                <h2>Traffic Feedback Page</h2>
+                <p>
+                    <strong><p class="page-descripton-label">Description:</p></strong> This page allows users to report real-time traffic feedback. Users can type in a message describing the situation (e.g., an accident) and choose a category (e.g., Heavy Traffic) from a dropdown menu.
+                </p>
+                <p class="page-descripton-label"><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Message Input: Users can describe traffic situations.</li>
+                    <li>Category Selection: Dropdown to choose a relevant traffic category.</li>
+                    <li>Map Updates: View the latest map updates related to traffic incidents.</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="page-description">
-        <h2>Late Notification Page</h2>
-        <img src="/images/Screenshot_20240926_111030_Shepherd Parking.jpg" alt="A description of the image" width="300">
-        <p>
-            <strong>Description:</strong> This page allows users to notify the system when they are running late, especially when it involves interactions with specific lecturers. Users can add a lecturer, select a reason for being late (e.g., traffic), and provide additional information before submitting the notification.
-        </p>
-        <p><strong>Main Features:</strong></p>
-        <ul>
-            <li>Lecturer Dropdown: Allows users to add or select a lecturer.</li>
-            <li>Reason Selection: Users can choose from a list of reasons for being late.</li>
-            <li>Additional Information: A text field for users to provide extra details.</li>
-        </ul>
-    </div>
 
-    <div class="page-description">
-        <h2>Analytics Page</h2>
-        <img src="/images/Screenshot_20240926_111050_Shepherd Parking.jpg" alt="A description of the image" width="300">
-        <p>
-            <strong>Description:</strong> This page provides statistical data regarding parking lot usage. It projects the expected capacity for the upcoming day, giving users an idea of the parking situation for the morning and afternoon. It helps users plan their parking in advance based on trends.
-        </p>
-        <p><strong>Main Features:</strong></p>
-        <ul>
-            <li>Projected Capacity: Shows the expected capacity for the next day in percentage.</li>
-            <li>Time Slots: A bar chart showing the parking occupancy for different times of the day.</li>
-        </ul>
-    </div>
+        <div class="page-section">
+            <!-- Image column -->
+            <img src="/images/Screenshot_20240926_110833_Shepherd Parking.jpg" alt="A description of the image" width="300">
 
-    <div class="page-description">
-        <h2>Settings Page</h2>
-        <img src="/images/Screenshot_20240926_111105_Shepherd Parking.jpg" alt="A description of the image" width="300">
-        <p>
-            <strong>Description:</strong> This page allows users to manage their preferences and personal information within the app. Users can update their student number, enable or disable location services, manage push notifications, and view app permissions.
-        </p>
-        <p><strong>Main Features:</strong></p>
-        <ul>
-            <li>Update Student Number: Allows users to modify their student number information.</li>
-            <li>Toggle Location Services: Users can turn location services on or off.</li>
-            <li>Push Notifications: Enables or disables notifications from the app.</li>
-            <li>Language Selection: Users can choose their preferred language.</li>
-        </ul>
-    </div>
-</div>
+            <!-- Description column -->
+            <div class="page-description">
+                <h2>Map Updates Page</h2>
+                <p>
+                    <strong><p class="page-descripton-label">Description:</p></strong> This page provides a visual representation of traffic incidents and parking lot conditions over the last 24 hours. It shows the location of incidents with a legend to explain the types of events (accident, heavy traffic, road construction, etc.).
+                </p>
+                <p class="page-descripton-label"><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Map with Legend: Displays the map with markers for incidents.</li>
+                    <li>Last 24 Hours: Shows updates in a 24-hour period for better decision-making.</li>
+                </ul>
+            </div>
+        </div>
 
+
+        <div class="page-section">
+            <!-- Image column -->
+            <img src="/images/Screenshot_20240926_111030_Shepherd Parking.jpg" alt="A description of the image" width="300">
+
+            <!-- Description column -->
+            <div class="page-description">
+                <h2>Late Notification Page</h2>
+                <p>
+                    <strong><p class="page-descripton-label">Description:</p></strong> This page allows users to notify the system when they are running late, especially when it involves interactions with specific lecturers. Users can add a lecturer, select a reason for being late (e.g., traffic), and provide additional information before submitting the notification.
+                </p>
+                <p class="page-descripton-label"><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Lecturer Dropdown: Allows users to add or select a lecturer.</li>
+                    <li>Reason Selection: Users can choose from a list of reasons for being late.</li>
+                    <li>Additional Information: A text field for users to provide extra details.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="page-section">
+            <!-- Image column -->
+            <img src="/images/Screenshot_20240926_111050_Shepherd Parking.jpg" alt="A description of the image" width="300">
+
+            <!-- Description column -->
+            <div class="page-description">
+                <h2>Analytics Page</h2>
+                <p>
+                    <strong><p class="page-descripton-label">Description:</p></strong> This page provides statistical data regarding parking lot usage. It projects the expected capacity for the upcoming day, giving users an idea of the parking situation for the morning and afternoon. It helps users plan their parking in advance based on trends.
+                </p>
+                <p class="page-descripton-label"><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Projected Capacity: Shows the expected capacity for the next day in percentage.</li>
+                    <li>Time Slots: A bar chart showing the parking occupancy for different times of the day.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="page-section">
+            <!-- Image column -->
+            <img src="/images/Screenshot_20240926_111105_Shepherd Parking.jpg" alt="A description of the image" width="300">
+
+            <!-- Description column -->
+            <div class="page-description">
+                <h2>Settings Page</h2>
+                <p>
+                    <strong><p class="page-descripton-label">Description:</p></strong> This page allows users to manage their preferences and personal information within the app. Users can update their student number, enable or disable location services, manage push notifications, and view app permissions.
+                </p>
+                <p class="page-descripton-label"><strong>Main Features:</strong></p>
+                <ul>
+                    <li>Update Student Number: Allows users to modify their student number information.</li>
+                    <li>Toggle Location Services: Users can turn location services on or off.</li>
+                    <li>Push Notifications: Enables or disables notifications from the app.</li>
+                    <li>Language Selection: Users can choose their preferred language.</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
 </body>
 </html>
+
+<script>
+  // Show or hide the back-to-top button based on scroll position
+  window.onscroll = function() {
+    var button = document.querySelector('.back-to-top');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      button.classList.add('show');
+    } else {
+      button.classList.remove('show');
+    }
+  };
+</script>
+

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rosshartigan/Folders/Shepherd-Parking-Website(Ghoul)/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj": {}
+    "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj": {}
   },
   "projects": {
-    "/Users/rosshartigan/Folders/Shepherd-Parking-Website(Ghoul)/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj": {
+    "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rosshartigan/Folders/Shepherd-Parking-Website(Ghoul)/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj",
+        "projectUniqueName": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj",
         "projectName": "Shepherd-Parking-Website",
-        "projectPath": "/Users/rosshartigan/Folders/Shepherd-Parking-Website(Ghoul)/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj",
+        "projectPath": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/Shepherd-Parking-Website.csproj",
         "packagesPath": "/Users/rosshartigan/.nuget/packages/",
-        "outputPath": "/Users/rosshartigan/Folders/Shepherd-Parking-Website(Ghoul)/Shepherd-Parking-Website/obj/",
+        "outputPath": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rosshartigan/.nuget/NuGet/NuGet.Config"
