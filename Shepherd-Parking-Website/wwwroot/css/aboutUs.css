@@ -108,6 +108,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .page-description:hover {
@@ -118,7 +119,7 @@ h1 {
 .page-description h2 {
     margin-bottom: 10px;
     font-size: 24px;
-    color: rgb(75, 185, 119); /* Match the heading color */
+    color: rgb(75, 185, 119); 
 }
 
 .page-descripton-label {
