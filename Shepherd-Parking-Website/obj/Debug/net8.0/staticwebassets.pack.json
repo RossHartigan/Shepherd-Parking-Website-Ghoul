@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/obj/Debug/net8.0/scopedcss/projectbundle/Shepherd-Parking-Website.bundle.scp.css",
+      "PackagePath": "staticwebassets/Shepherd-Parking-Website.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/aboutUs.css",
+      "PackagePath": "staticwebassets/css/aboutUs.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/SamGunHyde.jpg",
+      "PackagePath": "staticwebassets/images/SamGunHyde.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/SamJackHyde.jpg",
+      "PackagePath": "staticwebassets/images/SamJackHyde.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/SamRespectWomanHyde.jpg",
+      "PackagePath": "staticwebassets/images/SamRespectWomanHyde.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/SamShyHyde.jpg",
+      "PackagePath": "staticwebassets/images/SamShyHyde.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/SamTedHyde.jpg",
+      "PackagePath": "staticwebassets/images/SamTedHyde.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Sam_Hyde-_The_Candyman_20240101033414_e000007_02.jpeg",
+      "PackagePath": "staticwebassets/images/Sam_Hyde-_The_Candyman_20240101033414_e000007_02.jpeg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Screenshot_20240926_110424_Shepherd Parking.jpg",
+      "PackagePath": "staticwebassets/images/Screenshot_20240926_110424_Shepherd Parking.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Screenshot_20240926_110749_Shepherd Parking.jpg",
+      "PackagePath": "staticwebassets/images/Screenshot_20240926_110749_Shepherd Parking.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Screenshot_20240926_110833_Shepherd Parking.jpg",
+      "PackagePath": "staticwebassets/images/Screenshot_20240926_110833_Shepherd Parking.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Screenshot_20240926_111030_Shepherd Parking.jpg",
+      "PackagePath": "staticwebassets/images/Screenshot_20240926_111030_Shepherd Parking.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Screenshot_20240926_111050_Shepherd Parking.jpg",
+      "PackagePath": "staticwebassets/images/Screenshot_20240926_111050_Shepherd Parking.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Screenshot_20240926_111105_Shepherd Parking.jpg",
+      "PackagePath": "staticwebassets/images/Screenshot_20240926_111105_Shepherd Parking.jpg"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/Sheep_Logo.png",
+      "PackagePath": "staticwebassets/images/Sheep_Logo.png"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/background.png",
+      "PackagePath": "staticwebassets/images/background.png"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/dashboard.png",
+      "PackagePath": "staticwebassets/images/dashboard.png"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/images/sheep.png",
+      "PackagePath": "staticwebassets/images/sheep.png"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/js/firebase-init.js",
+      "PackagePath": "staticwebassets/js/firebase-init.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/js/login.js",
+      "PackagePath": "staticwebassets/js/login.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/js/verification.js",
+      "PackagePath": "staticwebassets/js/verification.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/rosshartigan/Folders/Shepherd-ParkingWebsite-Ghoul/Shepherd-Parking-Website-Ghoul/Shepherd-Parking-Website/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Shepherd-Parking-Website.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Shepherd-Parking-Website.props",
+      "PackagePath": "build\\Shepherd-Parking-Website.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Shepherd-Parking-Website.props",
+      "PackagePath": "buildMultiTargeting\\Shepherd-Parking-Website.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Shepherd-Parking-Website.props",
+      "PackagePath": "buildTransitive\\Shepherd-Parking-Website.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

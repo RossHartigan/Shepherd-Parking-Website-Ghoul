@@ -1,5 +1,5 @@
 body {
-  background-image: url('/images/background.png');
+  background-image: url("/images/background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,14 +9,13 @@ body {
 html {
   font-size: 1rem;
 }
- 
+
 @media (min-width: 768px) {
   html {
     font-size: 1.125rem;
   }
 }
- 
-/* Sidebar */
+
 .sidebar {
   width: 17%;
   height: 100vh;
@@ -32,37 +31,36 @@ html {
   transition: width 0.3s ease;
   overflow: hidden;
 }
- 
+
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: start;
   padding: 10px 20px;
-  background-color: #A8E2D0;
+  background-color: #a8e2d0;
   border-radius: 100px;
   width: 90%;
 }
- 
+
 .logo-container:hover {
   transform: scale(1.15);
 }
- 
+
 .logo {
   width: 30%;
   height: 100%;
   margin-right: 15px;
   border-radius: 10%;
 }
- 
+
 .app-name {
   font-size: 1rem;
   font-weight: bold;
   color: black;
-  font-family: 'Aptos';
+  font-family: "Aptos";
   text-transform: uppercase;
-  font-style: normal;
 }
- 
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -70,7 +68,7 @@ html {
   text-align: center;
   padding-top: 25%;
 }
- 
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -83,81 +81,79 @@ html {
   transition: background-color 0.3s ease, padding-left 0.3s ease;
   gap: 10px;
 }
- 
+
 .nav-link:hover,
 .nav-link.active {
-  background-color: #2E9F87;
+  background-color: #2e9f87;
   transform: scale(1.15);
 }
- 
+
 .nav-link i {
   font-size: 2em;
 }
- 
+
 .nav-link p {
   margin: 0;
   font-size: 1rem;
 }
- 
-/* Collapsed Sidebar when screen is smaller */
+
 @media (max-width: 1200px) {
   .sidebar {
     width: 60px;
   }
- 
+
   .sidebar .app-name {
     display: none;
   }
- 
-  .sidebar .nav #dashboard,#aboutus,#logout{
+
+  .sidebar .nav #dashboard,
+  #aboutus,
+  #logout {
     display: none;
   }
- 
+
   .sidebar .logo-container {
     justify-content: center;
     width: 100%;
   }
- 
+
   .sidebar .logo {
     margin-right: 0;
   }
- 
+
   .sidebar .nav-link {
     justify-content: center;
     padding-left: 0;
   }
- 
+
   .sidebar .nav-link i {
     margin-right: 0;
   }
- 
+
   .dashboard {
     margin-left: 60px;
   }
 }
- 
-/* Dashboard Layout */
+
 .dashboard {
   margin-left: 17%;
   padding: 20px;
   transition: margin-left 0.3s ease;
 }
- 
+
 @media (max-width: 1200px) {
   .dashboard {
     margin-left: 60px;
   }
 }
- 
-/* Dashboard Grid Layout */
+
 .dashboard-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
 }
- 
-/* Graph Container */
+
 .graph-container {
   grid-column: 1;
   grid-row: 1;
@@ -167,12 +163,30 @@ html {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
- 
-/* Map Container */
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
 .map-container {
   grid-column: 2 / 15;
   grid-row: 1 / 3;
@@ -186,8 +200,7 @@ html {
   align-items: center;
   font-size: 2rem;
 }
- 
-/* Car Count Container */
+
 .car-count-container {
   grid-column: 1;
   grid-row: 2;
@@ -197,41 +210,19 @@ html {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   background-color: white;
 }
- 
-/* Parking Capacity Container */
+
 .parking-capacity-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .parking-capacity-container h2 {
   margin: 0;
   color: black;
   font-size: 1.3rem;
 }
- 
-.parking-capacity-chart {
-  position: relative;
-  border-bottom: 0.75px solid black;
-  padding-bottom: 5%;
-}
- 
-#parkingCapacityChart:hover {
-  transform: scale(1.25);
-  transition: transform 0.4s ease-in-out;
-}
- 
-.car-count-details .afternoon-count:hover{
-  transform: scale(1.10);
-  transition: transform 0.3s ease-in-out;
-}
- 
-.car-count-details .morning-count:hover{
-  transform: scale(1.10);
-  transition: transform 0.3s ease-in-out;
-}
- 
+
 .capacity-text {
   position: absolute;
   top: 50%;
@@ -241,54 +232,58 @@ html {
   color: black;
   pointer-events: none;
 }
- 
+
+#parkingCapacityChart:hover {
+  transform: scale(1.25);
+  transition: transform 0.4s ease-in-out;
+}
+
 .car-count-details {
   display: flex;
   justify-content: space-around;
   width: 100%;
   text-align: center;
 }
- 
+
 .car-count-details h3 {
   margin: 5px 0;
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
 }
- 
+
 #morningCars,
 #afternoonCars {
   font-size: 1.5rem;
   font-weight: lighter;
   color: black;
 }
- 
+
 .morning-count,
 .afternoon-count {
   flex: 1;
   padding: 10px;
 }
- 
-/* Further Responsive adjustments */
+
 @media (max-width: 768px) {
   .dashboard-content {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
- 
+
   .sidebar {
     width: 50px;
   }
- 
+
   .dashboard {
     margin-left: 50px;
   }
 }
- 
+
 .map-container:hover,
 .graph-container:hover,
 .car-count-container:hover,
-.dashboard:hover{
+.dashboard:hover {
   transform: scale(1.025);
   transition: transform 0.3s ease-in-out;
 }
