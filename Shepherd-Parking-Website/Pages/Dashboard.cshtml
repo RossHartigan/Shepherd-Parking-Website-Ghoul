@@ -83,7 +83,7 @@
         // Import firebase-init to use the initialized Firebase instance
         import { db, realTimeDb } from '/js/firebase-init.js';
         import { ref, update, onValue } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
-        import { doc, updateDoc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+        import { collection, query, getDocs } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
         let map;
         let markers = [];
